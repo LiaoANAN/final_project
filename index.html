@@ -8,6 +8,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css"/>
 
     <style>
         .carousel-caption {
@@ -18,7 +19,42 @@
             div {
                 font-family: 微軟正黑體;
             }   
+
+            .my-element {
+                display: inline-block;
+                margin: 0 0.5rem;
+
+                animation: bounce; /* referring directly to the animation's @keyframe declaration */
+                animation-duration: 2s; /* don't forget to set a duration! */
+            }    
+
+            .myButton {
+                box-shadow: 0px 1px 0px 0px #1c1b18;
+                background:linear-gradient(to bottom, #eae0c2 5%, #ccc2a6 100%);
+                background-color:#eae0c2;
+                border-radius:15px;
+                border:2px solid #333029;
+                display:inline-block;
+                cursor:pointer;
+                color:#505739;
+                font-family:Arial;
+                font-size:24px;
+                font-weight:bold;
+                padding:17px 33px;
+                text-decoration:none;
+                text-shadow:0px 1px 0px #ffffff;
+            }
+            .myButton:hover {
+                background:linear-gradient(to bottom, #ccc2a6 5%, #eae0c2 100%);
+                background-color:#ccc2a6;
+            }
+            .myButton:active {
+                position:relative;
+                top:1px;
+        }
     </style>
+
+    
     
     <title>達文西幼稚園 招生網站</title>
   </head>
@@ -113,7 +149,7 @@
     <!--第一區 mt-4上間距-->
     <div class="container mt-4" data-aos="fade-right" id="context">
 
-        <h1 id="con">達文西幼稚園 公告區</h1>
+        <h1 class="animated infinite bounce" style="animation-duration: 5s;animation-iteration-count:3" id="con">達文西幼稚園 公告區</h1>
 
         <!--上方導覽-->
         <ul class="nav nav-tabs" id="myTab" role="tablist">
@@ -211,8 +247,25 @@
                     </div>
                     <a href="#" class="btn btn-secondary btn-lg active" role="button" aria-pressed="true">查看</a>
                 </div>
-
             </div>
+            <nav aria-label="Page navigation example" class="mt-4">
+                <ul class="pagination">
+                <li class="page-item">
+                    <a class="page-link" href="#" aria-label="Previous">
+                    <span aria-hidden="true">&laquo;</span>
+                    </a>
+                </li>
+                <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item"><a class="page-link" href="#">more...</a></li>
+                <li class="page-item">
+                    <a class="page-link" href="#" aria-label="Next">
+                    <span aria-hidden="true">&raquo;</span>
+                    </a>
+                </li>
+                </ul>
+            </nav>
         </div>
     </div>
     <!--第一區-->
