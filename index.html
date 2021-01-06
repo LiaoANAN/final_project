@@ -8,7 +8,11 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!--https://animate.style/-->
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css"/>
+
+    <script src="mainjs.js"></script>
+    
 
     <style>
         .carousel-caption {
@@ -29,29 +33,31 @@
             }    
 
             .myButton {
-                box-shadow: 0px 1px 0px 0px #1c1b18;
-                background:linear-gradient(to bottom, #eae0c2 5%, #ccc2a6 100%);
-                background-color:#eae0c2;
-                border-radius:15px;
-                border:2px solid #333029;
+                box-shadow:inset 0px 1px 0px 0px #ffffff;
+                background-color:#f9f9f9;
+                border-radius:6px;
+                border:1px solid #dcdcdc;
                 display:inline-block;
                 cursor:pointer;
-                color:#505739;
+                color:#666666;
                 font-family:Arial;
-                font-size:24px;
+                font-size:15px;
                 font-weight:bold;
-                padding:17px 33px;
+                padding:16px 36px;
                 text-decoration:none;
                 text-shadow:0px 1px 0px #ffffff;
             }
             .myButton:hover {
-                background:linear-gradient(to bottom, #ccc2a6 5%, #eae0c2 100%);
-                background-color:#ccc2a6;
+                background-color:#e9e9e9;
             }
             .myButton:active {
                 position:relative;
                 top:1px;
-        }
+            }
+
+            img.square {
+                border-radius: 75%;
+            }
     </style>
 
     
@@ -61,7 +67,7 @@
   <body>
 
     <!--NavBar-->
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top" style="background-color: #353866">
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" style="background-color:#476e9e">
         <a class="navbar-brand text-white" href="#">
             <img src="images/icon.png" style="width: 45px" alt="">
             <strong>達文西 皇家雙語幼稚園</strong>
@@ -114,21 +120,21 @@
         </ol>
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img src="images/banner1.jpg" class="d-block w-100" alt="...">
+            <img src="images2/banner1.jpg" class="d-block w-100" alt="...">
             <div class="carousel-caption d-none d-md-block" style="padding-bottom: 100px;color: white">
                 <h1>達文西 皇家雙語幼稚園 熱烈招生中</h1>
                 <h3>我們可以給您的孩子最好的學習環境、最優秀的師資。</h3>
             </div>
           </div>
           <div class="carousel-item">
-            <img src="images/banner2.jpg" class="d-block w-100" alt="...">
+            <img src="images2/banner2.jpg" class="d-block w-100" alt="...">
             <div class="carousel-caption d-none d-md-block" style="padding-bottom: 100px;color: white">
                 <h1>最優秀的師資</h1>
                 <h3>陪伴您的孩子度過最黃金的學習時期。</h3>
             </div>
           </div>
           <div class="carousel-item">
-            <img src="images/banner3.jpg" class="d-block w-100" alt="...">
+            <img src="images2/banner3.jpg" class="d-block w-100" alt="...">
             <div class="carousel-caption d-none d-md-block" style="padding-bottom: 100px;color: white">
                 <h1>小班制教學</h1>
                 <h3>純小班制讓您的孩子可以獲得足夠的關懷。</h3>
@@ -146,7 +152,72 @@
     </div>
     <!--開頭輪播大畫面-->
 
-    <!--第一區 mt-4上間距-->
+    <!--CARD1-->
+    <!--    <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script> 
+    <script type="text/javascript"> 
+    $(document).ready(function() { 
+        $('#tab-tab_700964 a').on('click', function(){ 
+        $('.card1_cont').html('hey');
+        }); 
+        $('#tab-tab_700965 a').on('click', function(){ 
+        $('.card1_cont').html('hello');
+        }); 
+    }); 
+    </script>-->
+
+    <div class="collapse bg-info" id="navbarHeader">
+        <div class="container">
+          <div class="row">
+
+
+            <div class="card1_cont">
+                <section id="card1_cont" class="bg-info text-white text-center py-5">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="mb-3">
+                                    <h3>教學理念</h3>
+                                    <p>秉持最原始、最傳統的熱忱教學，給孩子最好的學習體驗。</p>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="mb-3">
+                                    <h3>學習環境</h3>
+                                    <p>身處鬧區但幼兒園能讓孩子更早學會抵抗噪音，更能學會如何抵抗誘惑。</p>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="mb-3">
+                                    <h3>優秀師資</h3>
+                                    <p>達文西幼兒園從海外聘請優秀師資，讓孩子能夠在國內享受國外學風。</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!--按鈕網址:https://www.bestcssbuttongenerator.com/#/24-->
+                        <a href="#other" class="myButton">READ MORE</a>
+                    </div>
+                </section> 
+            </div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="navbar navbar-dark shadow-sm" style="background-color: #476e9e;">
+        <div class="container d-flex justify-content-between">
+          <a href="#" class="navbar-brand d-flex align-items-center">
+            <img src="images/covid-19.png" style="width: 45px" alt="">
+            <strong>&nbsp;&nbsp;防疫期間請各位家長替小朋友準備好口罩，本園也會每天進行教室及餐具消毒。</strong>
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+      </div>
+    
+    <!--CARD1-->
+
+    <!--第一區 mt-4上間距 來源:https://getbootstrap.com/docs/4.5/components/navs/-->
     <div class="container mt-4" data-aos="fade-right" id="context">
 
         <h1 class="animated infinite bounce" style="animation-duration: 5s;animation-iteration-count:3" id="con">達文西幼稚園 公告區</h1>
@@ -172,10 +243,28 @@
             <!--最新公告 Media object/Example-->
             <div class="tab-pane fade show active" id="new" role="tabpanel" aria-labelledby="home-tab">
                 <div class="media mt-4">
-                    <img src="images/announcement_logo.png" style="width: 45px;" class="mr-3" alt="...">
+                    <img src="images/comm_icon1.png" style="width: 45px;" class="mr-3" alt="...">
                     <div class="media-body">
-                      <h2 class="mt-0">10/29 幼兒園消毒啟示</h2>
-                      達文西幼稚園將在10/29進行園內消毒，放假一天，請各位家長注意。
+                      <h2 class="mt-0">10/29 | 幼兒園消毒啟示</h2>
+                      <p>達文西幼稚園將在10/29進行園內消毒，放假一天，請各位家長注意。</p>
+                    </div>
+                    <a href="#" class="btn btn-secondary btn-lg active" role="button" aria-pressed="true">查看</a>
+                </div>
+
+                <div class="media mt-4">
+                    <img src="images/comm_icon2.png" style="width: 45px;" class="mr-3" alt="...">
+                    <div class="media-body">
+                      <h2 class="mt-0">10/27 | 教育部長前來查訪通知通知</h2>
+                      <p>10/27 早上9:00教育部長將來園區查訪，歡迎家長共襄盛舉。</p>
+                    </div>
+                    <a href="#" class="btn btn-secondary btn-lg active" role="button" aria-pressed="true">查看</a>
+                </div>
+
+                <div class="media mt-4">
+                    <img src="images/comm_icon3.png" style="width: 45px;" class="mr-3" alt="...">
+                    <div class="media-body">
+                      <h2 class="mt-0">10/15 | 達文西幼稚園滿15周年</h2>
+                      <p>達文西幼稚園滿15週年囉!趕快帶小朋友一起來同樂。</p>
                     </div>
                     <a href="#" class="btn btn-secondary btn-lg active" role="button" aria-pressed="true">查看</a>
                 </div>
@@ -183,47 +272,46 @@
                 <div class="media mt-4">
                     <img src="images/announcement_logo.png" style="width: 45px;" class="mr-3" alt="...">
                     <div class="media-body">
-                      <h2 class="mt-0">10/27 教育部長前來查訪通知通知</h2>
-                      10/27 早上9:00教育部長將來園區查訪，歡迎家長共襄盛舉。
+                      <h2 class="mt-0">10/11 | 師資更動說明</h2>
+                      <p>請各位家長注意，本園將於10月底更換新的一批師資，敬請期待。</p>
                     </div>
                     <a href="#" class="btn btn-secondary btn-lg active" role="button" aria-pressed="true">查看</a>
                 </div>
-
-                <div class="media mt-4">
-                    <img src="images/announcement_logo.png" style="width: 45px;" class="mr-3" alt="...">
-                    <div class="media-body">
-                      <h2 class="mt-0">10/15 達文西幼稚園滿15周年</h2>
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, dolor.
-                    </div>
-                    <a href="#" class="btn btn-secondary btn-lg active" role="button" aria-pressed="true">查看</a>
-                </div>
-
-                <div class="media mt-4">
-                    <img src="images/announcement_logo.png" style="width: 45px;" class="mr-3" alt="...">
-                    <div class="media-body">
-                      <h2 class="mt-0">9/25 師資更動說明</h2>
-                      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate asperiores odit provident nobis aspernatur consequatur?
-                    </div>
-                    <a href="#" class="btn btn-secondary btn-lg active" role="button" aria-pressed="true">查看</a>
-                </div>
+                <nav aria-label="Page navigation example" class="mt-4">
+                    <ul class="pagination">
+                    <li class="page-item">
+                        <a class="page-link" href="#" aria-label="Previous">
+                        <span aria-hidden="true">&laquo;</span>
+                        </a>
+                    </li>
+                    <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item"><a class="page-link" href="#">more...</a></li>
+                    <li class="page-item">
+                        <a class="page-link" href="#" aria-label="Next">
+                        <span aria-hidden="true">&raquo;</span>
+                        </a>
+                    </li>
+                    </ul>
+                </nav>
             </div>
             <!--最新公告-->
 
             <div id="con2" class="container tab-pane fade">
                 <div class="media mt-4">
-                    <img src="images/announcement_logo.png" style="width: 45px;" class="mr-3" alt="...">
+                    <img src="images/comm_icon1.png" style="width: 45px;" class="mr-3" alt="...">
                     <div class="media-body">
-                      <h2 class="mt-0">8/25 Lorem ipsum dolor sit amet.</h2>
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque doloremque perspiciatis commodi ea. Impedit, totam?
+                      <h2 class="mt-0">12/20 | 嚴防疫情，每日測量體溫</h2>
+                      <p>請各位家長每天早上先在家幫孩子測量體溫。</p>
                     </div>
                     <a href="#" class="btn btn-secondary btn-lg active" role="button" aria-pressed="true">查看</a>
                 </div>
-
                 <div class="media mt-4">
-                    <img src="images/announcement_logo.png" style="width: 45px;" class="mr-3" alt="...">
+                    <img src="images/comm_icon2.png" style="width: 45px;" class="mr-3" alt="...">
                     <div class="media-body">
-                      <h2 class="mt-0">7/23 Lorem, ipsum dolor.</h2>
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore libero eaque iste? Minus, dolor aliquam!
+                      <h2 class="mt-0">12/16 | 幼兒園娃娃車整修</h2>
+                      <p>12/16幼兒園娃娃車進行整修，造成不便請見諒。</p>
                     </div>
                     <a href="#" class="btn btn-secondary btn-lg active" role="button" aria-pressed="true">查看</a>
                 </div>
@@ -233,8 +321,8 @@
                 <div class="media mt-4">
                     <img src="images/announcement_logo.png" style="width: 45px;" class="mr-3" alt="...">
                     <div class="media-body">
-                      <h2 class="mt-0">8/25 Lorem ipsum dolor sit amet.</h2>
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque doloremque perspiciatis commodi ea. Impedit, totam?
+                      <h2 class="mt-0">08/25 | 開放家長進園參觀</h2>
+                      <p>若您對於本園有興趣，可以申請入園參觀喔。</p>
                     </div>
                     <a href="#" class="btn btn-secondary btn-lg active" role="button" aria-pressed="true">查看</a>
                 </div>
@@ -242,30 +330,12 @@
                 <div class="media mt-4">
                     <img src="images/announcement_logo.png" style="width: 45px;" class="mr-3" alt="...">
                     <div class="media-body">
-                      <h2 class="mt-0">7/23 Lorem, ipsum dolor.</h2>
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore libero eaque iste? Minus, dolor aliquam!
+                      <h2 class="mt-0">07/14 | 免試入學申請</h2>
+                      <p>現在提前申請免試入學，可以替孩子卡位喔。</p>
                     </div>
                     <a href="#" class="btn btn-secondary btn-lg active" role="button" aria-pressed="true">查看</a>
                 </div>
             </div>
-            <nav aria-label="Page navigation example" class="mt-4">
-                <ul class="pagination">
-                <li class="page-item">
-                    <a class="page-link" href="#" aria-label="Previous">
-                    <span aria-hidden="true">&laquo;</span>
-                    </a>
-                </li>
-                <li class="page-item active"><a class="page-link" href="#">1</a></li>
-                <li class="page-item"><a class="page-link" href="#">2</a></li>
-                <li class="page-item"><a class="page-link" href="#">3</a></li>
-                <li class="page-item"><a class="page-link" href="#">more...</a></li>
-                <li class="page-item">
-                    <a class="page-link" href="#" aria-label="Next">
-                    <span aria-hidden="true">&raquo;</span>
-                    </a>
-                </li>
-                </ul>
-            </nav>
         </div>
     </div>
     <!--第一區-->
@@ -319,8 +389,7 @@
                         <!--lorem57-->
                         <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
                         <div class="card-body">
-                            達文西雙語幼稚園特地從海外聘請優秀師資，因疫情關係我們也支援遠距教學的課程，讓您的孩子在疫情期間學習也不會耽誤。
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime tenetur unde, totam consectetur, aliquam ad fugiat eaque repellendus aliquid, veritatis voluptatum! Itaque et adipisci, ex commodi laboriosam sint amet ab perspiciatis praesentium aperiam consequuntur nobis architecto recusandae eum aut culpa odio ut repellendus autem esse? Fugiat nisi vero velit veniam incidunt corporis voluptatem consequuntur deserunt eligendi labore.
+                            <p>達文西雙語幼稚園特地從海外聘請優秀師資，因疫情關係我們也支援遠距教學的課程，讓您的孩子在疫情期間學習也不會耽誤。</p>
                         </div>
                         </div>
                     </div>
@@ -335,8 +404,7 @@
 
                         <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
                         <div class="card-body">
-                            達文西雙語幼稚園注重雙語並重學習，讓您的孩子在幼稚園時期就可以充分練習英文且獲得足夠國際觀，培養未來能力趨勢。
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos sunt ducimus eos neque deleniti, ut quod nisi veritatis quae, vero pariatur temporibus eaque tempore aliquid. A mollitia, at consectetur facere harum quis dolorum? In delectus sapiente nostrum voluptas esse, dolore, nobis cumque, perferendis consequatur nihil ipsum? Praesentium aliquid corporis perspiciatis quisquam possimus, doloribus autem accusantium beatae illum.
+                            <p>達文西雙語幼稚園注重雙語並重學習，讓您的孩子在幼稚園時期就可以充分練習英文且獲得足夠國際觀，培養未來能力趨勢。</p>
                         </div>
                         </div>
                     </div>
@@ -351,8 +419,7 @@
 
                         <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
                         <div class="card-body">
-                            達文西雙語幼稚園位於大台北地區捷運中山站出口旁，地理位置十分方便，讓孩子也能夠自行上下學。
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quae earum veniam eligendi itaque neque excepturi vero ea, corporis libero doloribus officia eum eos, necessitatibus nam labore? Impedit, accusamus itaque nisi fugit odit repellat! Voluptas repudiandae iusto error ad, sed repellat dolor explicabo delectus dicta magnam deserunt iste totam nam consectetur quaerat sapiente soluta, modi eligendi labore similique dolorum sequi.
+                            <p>達文西雙語幼稚園位於大台北地區捷運中山站出口旁，地理位置十分方便，讓孩子也能夠自行上下學。</p>
                         </div>
                         </div>
                     </div>
@@ -362,91 +429,62 @@
     <!--第二區 課程介紹-->
 
     <!--師資陣容介紹 Card/Card decks-->
-    <div class="container">
+
+    <div class="container" id="teacher">
         <h1>專業師資介紹</h1>
         <div class="row">
-        <div class="col-lg-4 my-4" id="teacher">
-            <div class="card text-center" data-aos="fade-right" data-aos="flip-left">
-                <img class="card-img-top" src="images/teacher1.jpg" alt="" height="450">
-                <div class="card-body">
-                    <h5 class="card-title">李傑</h5>
-                    <h6 class="card-subtitle text-muted mb-2">國立台灣大學 國語文幼兒教育碩士學位</h6>
-                    <p>專攻幼兒國文專長。</p>
-                </div>
-                <footer class="card-footer text-muted">jay@ncu.edu.tw</footer>
-            </div>
-        </div>
 
-        <div class="col-lg-4 my-4">
-            <div class="card text-center" data-aos="flip-left">
-                <img class="card-img-top" src="images/teacher2.jpg" alt="" height="450">
-                <div class="card-body">
-                    <h5 class="card-title">陳紫懸</h5>
-                    <h6 class="card-subtitle text-muted mb-2">資深幼兒英文補教名師</h6>
-                    <p>專攻幼兒英文惡補，全方位美語補習。</p>
-                </div>
-                <footer class="card-footer text-muted">xiuy@nfu.edu.tw</footer>
-            </div>
-        </div>
-
-        <div class="col-lg-4 my-4">
-            <div class="card text-center" data-aos="flip-left">
-                <img class="card-img-top" src="images/teacher3.jpg" alt="" height="450">
-                <div class="card-body">
-                    <h5 class="card-title">李大同</h5>
-                    <h6 class="card-subtitle text-muted mb-2">國立清華大學 化學系榮譽教授</h6>
-                    <p>專攻幼兒教育學士後，給予孩子全方位。</p>
-                </div>
-                <footer class="card-footer text-muted">liwu@nfu.edu.tw</footer>
-            </div>
-        </div>
-
-        <div class="col-lg-4 my-4">
-            <div class="card text-center" data-aos="flip-left">
-                <img class="card-img-top" src="images/teacher4.jpg" alt="" height="450">
-                <div class="card-body">
-                    <h5 class="card-title">呂婕</h5>
-                    <h6 class="card-subtitle text-muted mb-2">資深歷史補教名師</h6>
-                    <p>專攻笑話課程、歷史系惡補。</p>
-                </div>
-                <footer class="card-footer text-muted">uis@nfu.edu.tw</footer>
-            </div>
-        </div>
-
-        <div class="col-lg-4 my-4">
-            <div class="card text-center" data-aos="flip-left">
-                <img class="card-img-top" src="images/teacher5.jpg" alt="" height="450">
-                <div class="card-body">
-                    <h5 class="card-title">李涵</h5>
-                    <h6 class="card-subtitle text-muted mb-2">資深物理補教名師</h6>
-                    <p>專攻物理學、物理指考滿分保證。</p>
-                </div>
-                <footer class="card-footer text-muted">LISIS@nfu.edu.tw</footer>
-            </div>
-        </div>
-
-        <div class="col-lg-4 my-4">
-            <div class="card text-center" data-aos="flip-left">
-                <img class="card-img-top" src="images/teacher6.jpg" alt="" height="450">
-                <div class="card-body">
-                    <h5 class="card-title">郭跆茗</h5>
-                    <h6 class="card-subtitle text-muted mb-2">大公司董事長</h6>
-                    <p>專攻理財、創業投資，榮譽講座。</p>
-                </div>
-                <footer class="card-footer text-muted">xxx@nfu.edu.tw</footer>
+            <div class="col-lg-4 my-4" data-aos="fade-up" data-aos-duration="3000">
+                <div class="card text-center" data-aos="fade-right" data-aos="flip-left">
+                    <img class="card-img-top square" src="images/teacher1.jpg" alt="" height="350">
+                    <div class="card-body" style="background-color: antiquewhite;">
+                        <h3 class="card-title">Jay</h3>
+                        <h6 class="card-subtitle text-muted mb-2">國立台灣大學 國語文幼兒教育碩士學位</h6>
+                        <p>小節老師有多年任教經驗，值得信任。</p>
                     </div>
-                </div>           
+                    <footer class="card-footer text-muted">jay@ncu.edu.tw</footer>
+                </div>
+            </div>
+
+            <div class="col-lg-4 my-4">
+                <div class="card text-center" data-aos="zoom-in-left">
+                    <img class="card-img-top square" src="images/teacher2.jfif" alt="" height="350">
+                    <div class="card-body" style="background-color: antiquewhite;">
+                        <h3 class="card-title">Angel Tin</h3>
+                        <h6 class="card-subtitle text-muted mb-2">資深幼兒英文補教名師</h6>
+                        <p>專攻幼兒英文惡補，全方位美語補習。</p>
+                    </div>
+                    <footer class="card-footer text-muted">xiuy@nfu.edu.tw</footer>
+                </div>
+            </div>
+
+            <div class="col-lg-4 my-4">
+                <div class="card text-center" data-aos="flip-left">
+                    <img class="card-img-top square" src="images/teacher3.jpg" alt="" height="350">
+                    <div class="card-body" style="background-color: antiquewhite;">
+                        <h3 class="card-title">Lee DaDa</h3>
+                        <h6 class="card-subtitle text-muted mb-2">國立台中教育大學</h6>
+                        <p>專攻幼兒教育學士後，給予孩子全方位。</p>
+                    </div>
+                    <footer class="card-footer text-muted">liwu@nfu.edu.tw</footer>
+                </div>
             </div>
         </div>
     </div>
     
 
-    <!--中2區塊-->
-    <div id="student" class="container mt-5" data-aos="fade-right" data-aos="flip-left" style="background-color: cadetblue;">
-        <br>
-        <h1 class="text-bold text-white view-animate fadeInUpSmall delay-04 active text-center mt-4">招生資訊</h1>
+    <!--招生資訊-->
+    <div id="student" class="container mt-4" data-aos="fade-right" data-aos="flip-left">
         <div class="row">
-            <div class="col-md-4 card-deck mb-3 text-center my-4">
+            <div class="col-lg-6 mb-4">
+                <img class="img-fluid rounded" src="images/context4.jpg">
+            </div>
+
+            <div class="col-lg-6 mb-4">
+
+                <h1 class="my-3">&nbsp;&nbsp;招生資訊</h1>
+                
+                <div class="col-md-10 card-deck mb-3 text-center my-6">
                     <div class="card mb-4 shadow-sm">
                             <div class="card-header">
                             <h4 class="my-0 font-weight-normal">超優惠!幼幼班啟蒙課程</h4>
@@ -459,12 +497,12 @@
                                 <li>中文啟蒙</li>
                                 <li>提供售後服務</li>
                             </ul>
-                            <button type="button" class="btn btn-lg btn-block btn-outline-primary">立即報名課程</button>
+                            <button type="button" class="myButton">立即報名課程</button>
                             </div>
                     </div>
                 </div>
 
-                <div class="col-md-4 card-deck mb-3 text-center my-5">
+                <div class="col-md-10 card-deck mb-3 text-center my-6">
             
                         <div class="card mb-4 shadow-sm">
                                 <div class="card-header">
@@ -478,34 +516,15 @@
                                     <li>開學前進度複習</li>
                                     <li>提供售後服務</li>
                                 </ul>
-                                <button type="button" class="btn btn-lg btn-block btn-primary">立即報名課程</button>
+                                <button type="button" class="myButton">立即報名課程</button>
                                 </div>
                         </div>
             
                   </div>
-            
-                  <div class="col-md-4 card-deck mb-3 text-center my-5">
-            
-                        <div class="card mb-4 shadow-sm">
-                                <div class="card-header">
-                                <h4 class="my-0 font-weight-normal">菁英型大班升小學衝刺班</h4>
-                                </div>
-                                <div class="card-body">
-                                <h1 class="card-title pricing-card-title">$66666 <small class="text-muted">/ 暑期</small></h1>
-                                <ul class="list-unstyled mt-3 mb-4">
-                                    <li>10人小班制</li>
-                                    <li>學測全科+指考科目課程</li>
-                                    <li>開學前進度複習</li>
-                                    <li>提供售後服務</li>
-                                </ul>
-                                <button type="button" class="btn btn-lg btn-block btn-primary">立即報名課程</button>
-                                </div>
-                        </div>
-            
-                </div>
+                
+            </div>
         </div>
-    </div>
-    <!--中2區塊-->
+    <!--招生資訊-->
 
     <!--屁話區-->
 
